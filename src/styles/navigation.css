@@ -20,11 +20,11 @@
 #navbar-menu a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #navbar-menu a:hover {
-    color: white;
+    color: palevioletred;
     /* border: 2px solid white; */
 }
 
