@@ -1,0 +1,45 @@
+---
+import '../styles/navbar.css'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/navbar.css">
+</head>
+<body>
+
+<nav class="nav">
+    <a href="#" id="nav-logo">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWsxbTF5a242cWRrNGYxczBxNWJtNWNudXN1ZHZ1dDM3ZzdqZWMwayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pOTvR5CtiB4sWMFHPG/giphy.gif" alt="" width="110" height="100"/>
+    </a>
+
+    <ul id="navbar-menu">
+        <li><a href='/'>Home</a></li>
+        <li><a href='/portfolio'>Portfolio</a></li>
+        <li><a href='/about'>About</a></li>
+    </ul>
+
+    <div id="nav-toggler">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+    </div>
+</nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navToggler = document.getElementById('nav-toggler');
+        const menu = document.getElementById('navbar-menu');
+        
+        navToggler.addEventListener('click', function() {
+            menu.classList.toggle('nav-active');
+        });
+    });
+</script>
+
+</body>
+</html>
+

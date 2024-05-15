@@ -1,7 +1,11 @@
 ---
-const siteName = "Beto's E-Garder 🌼";
+const siteName = "About Me 🇲🇽";
 import Navbar from '../navigation/navbar.astro';
 import '../styles/global.css';
+import '../styles/about.css';
+const skills = ['html', 'css', 'javascript', 'python', 'java', 'astro', 'react']
+
+
 ---
 
 <html lang="en">
@@ -16,6 +20,12 @@ import '../styles/global.css';
 
 		<Navbar />
 		<h1>{siteName}</h1>
+        
+        <ul>
+        {skills.map(skill => (
+            <li>{skill}</li>
+        ))}
+        </ul>
 
 	</body>
 </html>
