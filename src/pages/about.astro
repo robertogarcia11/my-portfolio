@@ -1,31 +1,16 @@
 ---
 const siteName = "About Me 🇲🇽";
-import Nav from '../components/navigation.astro';
+const skills = ['html', 'css', 'javascript', 'python', 'java', 'astro', 'react']
+
 import '../styles/global.css';
 import '../styles/about.css';
-const skills = ['html', 'css', 'javascript', 'python', 'java', 'astro', 'react']
+import MainLayout from '../layouts/mainLayout.astro';
 
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{siteName}</title>
-	</head>
-	<body>
+<MainLayout {siteName}>
 
-		<Nav />
-		<h1>{siteName}</h1>
-        
-        
-        {skills.map(skill => (
-            <p>{skill}</p>
-        ))}
-      
+	<h1>{siteName}</h1>
 
-	</body>
-</html>
+</MainLayout>

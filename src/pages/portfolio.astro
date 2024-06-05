@@ -1,21 +1,13 @@
 ---
 const siteName = "My Portfolio 💼";
-import Nav from '../components/navigation.astro';
-import '../styles/global.css';
 
+import '../styles/global.css';
+import '../styles/portfolio.css';
+import MainLayout from '../layouts/mainLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{siteName}</title>
-	</head>
-	<body>
+<MainLayout {siteName}>
 
-        <Nav/>
-		<h1>{siteName}</h1>
-	</body>
-</html>
+	<h1>Welcome to {siteName}</h1>
+
+</MainLayout>

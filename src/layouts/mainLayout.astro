@@ -1,0 +1,32 @@
+---
+import '../styles/global.css'
+import Navigation from '../components/navigation.astro'
+import Footer from '../components/footer.astro'
+
+const {siteName} = Astro.props;
+const pageName = 'Digital Garden';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageName} : {siteName}</title>
+	</head>
+	<body>
+		
+        <main>
+
+            <Navigation/>
+
+            <slot/>
+
+            <Footer/>
+                
+
+        </main>
+
+	</body>
+</html>
