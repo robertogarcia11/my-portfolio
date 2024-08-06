@@ -1,23 +1,14 @@
 ---
 const siteName = "About Me 🇲🇽";
-const skills = ['html', 'css', 'javascript', 'python', 'java', 'astro', 'react']
 
 import '../styles/global.css';
 import '../styles/about.css';
 import MainLayout from '../layouts/mainLayout.astro';
 
-
 ---
 
 <MainLayout {siteName}>
 
-	<h1>{siteName}</h1>
-	{
-		skills.map((skill, index) => (
-			<div key={index} className="skill">
-				{skill}
-			</div>
-		))
-	}
+	
 
 </MainLayout>
