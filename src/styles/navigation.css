@@ -20,7 +20,7 @@
 #navbar-menu a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #navbar-menu a:hover {
