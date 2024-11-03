@@ -1,14 +1,29 @@
 p {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+    color: black;
+    font-size: 21px;
     text-align: center;
     margin-top: 50px;
 }
 
 h2 {
-    color: rgb(0, 0, 0);
-    font-size: 30px;
+    color: lightcoral;
+    font-size: 35px;
     text-align: center;
+}
+
+h3 {
+    color: lightcoral;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#title {
+    color: black;
+    margin-top: 0%;
+    font-size: 22px;
+
+  
 }
 
 #selfie {
