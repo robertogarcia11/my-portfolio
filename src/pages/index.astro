@@ -5,6 +5,7 @@ import '../styles/global.css';
 import '../styles/index.css';
 import selfie from '../images/prof-pic.png';
 import selfie2 from '../images/non-prof-pic.png';
+import yugi from '../images/yugi.png';
 import MainLayout from '../layouts/mainLayout.astro';
 ---
 <MainLayout {siteName}>
@@ -17,8 +18,24 @@ import MainLayout from '../layouts/mainLayout.astro';
 	<body>
 		<h3>Projects</h3>
 
-		<div>
-		
+		<div class="projects-container">
+			<div class="project-card">
+				<h4>Yu-Gi-Oh TCG</h4>
+				<a href="https://yugiohtcg.netlify.app/" target="_blank">
+					<img src={yugi.src} alt="Project 1" class="project-image">
+				</a>
+				<p class="project-description">A short description of the project goes here.</p>
+			</div>
+
+			<div class="project-card">
+				<h4>Project Title 2</h4>
+				<a href="https://example.com" target="_blank">
+					<img src="../images/project2.jpg" alt="Project 2" class="project-image">
+				</a>
+				<p class="project-description">Another project description with details.</p>
+			</div>
+
+			<!-- Add more projects here -->
 
 		</div>
 		
