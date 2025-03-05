@@ -6,6 +6,7 @@ import '../styles/index.css';
 import selfie from '../images/prof-pic.png';
 import selfie2 from '../images/non-prof-pic.png';
 import yugi from '../images/yugi.png';
+import robbie from '../images/robbie.png';
 import MainLayout from '../layouts/mainLayout.astro';
 ---
 <MainLayout {siteName}>
@@ -28,13 +29,13 @@ import MainLayout from '../layouts/mainLayout.astro';
 			</div>
 
 			<div class="project-card">
-				<h4>Project Title 2</h4>
-				<a href="https://example.com" target="_blank">
-					<img src="../images/project2.jpg" alt="Project 2" class="project-image">
+				<h4>Blappy Bird</h4>
+				<a href="https://blappy-fird.netlify.app/" target="_blank">
+					<img src={robbie.src} alt="Project 2" class="project-image">
 				</a>
-				<p class="project-description">Another project description with details.</p>
+				<p class="project-description">A short description of the project goes here.</p>
 			</div>
-
+			
 			<!-- Add more projects here -->
 
 		</div>
