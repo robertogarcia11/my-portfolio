@@ -5,8 +5,8 @@ import '../styles/global.css';
 import '../styles/index.css';
 import selfie from '../images/prof-pic.png';
 import selfie2 from '../images/non-prof-pic.png';
-import yugi from '../images/yugi.png';
-import robbie from '../images/robbie.png';
+import project from '../images/project.png';
+
 import MainLayout from '../layouts/mainLayout.astro';
 ---
 <MainLayout {siteName}>
@@ -23,7 +23,7 @@ import MainLayout from '../layouts/mainLayout.astro';
 			<div class="project-card">
 				<h4>Yu-Gi-Oh TCG</h4>
 				<a href="https://yugiohtcg.netlify.app/" target="_blank">
-					<img src={yugi.src} alt="Project 1" class="project-image">
+					<img src={project.src} alt="Project 1" class="project-image">
 				</a>
 				<p class="project-description">A short description of the project goes here.</p>
 			</div>
@@ -31,7 +31,15 @@ import MainLayout from '../layouts/mainLayout.astro';
 			<div class="project-card">
 				<h4>Blappy Bird</h4>
 				<a href="https://blappy-fird.netlify.app/" target="_blank">
-					<img src={robbie.src} alt="Project 2" class="project-image">
+					<img src={project.src} alt="Project 2" class="project-image">
+				</a>
+				<p class="project-description">A short description of the project goes here.</p>
+			</div>
+
+			<div class="project-card">
+				<h4>Donut Parade</h4>
+				<a href="https://donutparade.netlify.app/" target="_blank">
+					<img src={project.src} alt="Project 2" class="project-image">
 				</a>
 				<p class="project-description">A short description of the project goes here.</p>
 			</div>
